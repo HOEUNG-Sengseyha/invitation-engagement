@@ -2,474 +2,432 @@
 <html lang="km">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-<title>ស ♥ ក — Engagement Party</title>
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<title>Engagement Party - Sengseyha &amp; Kanika</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&family=Great+Vibes&family=Noto+Serif+Khmer:wght@300;400;500;600;700&family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
 <style>
 *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
-:root{
-  --rose:#d4a0a0;--rose-light:#f0d4d4;--rose-deep:#c4797b;--rose-soft:#f5e0e0;
-  --blush:#fdf2f0;--cream:#fdf8f4;--ivory:#fffcf7;
-  --gold:#b8943e;--gold-light:#d4b35a;
-  --sage:#9caa97;--sage-light:#c5d4c0;
-  --text-dark:#3a2c2c;--text-med:#6b5555;--text-light:#9a8585;
-  --border-rose:rgba(196,121,123,0.2);
-}
-html{scroll-behavior:smooth}
-body{font-family:'Noto Serif Khmer','Lora',serif;background:var(--cream);color:var(--text-dark);overflow-x:hidden;-webkit-font-smoothing:antialiased}
-
-/* INTRO */
-#intro{position:fixed;inset:0;z-index:9999;background:var(--ivory);display:flex;flex-direction:column;align-items:center;justify-content:center;transition:opacity .9s,transform .9s}
-#intro.hide{opacity:0;transform:scale(1.08);pointer-events:none}
-.intro-floral{position:absolute;width:140px;opacity:.5}
-.intro-floral.tl{top:-10px;left:-10px}
-.intro-floral.br{bottom:-10px;right:-10px;transform:rotate(180deg)}
-.intro-ring{width:110px;height:110px;margin-bottom:2rem;animation:floatR 3s ease-in-out infinite}
-@keyframes floatR{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
-.intro-ring svg{width:100%;height:100%}
-.intro-pre{font-family:'Cormorant Garamond',serif;font-size:.85rem;letter-spacing:.25em;text-transform:uppercase;color:var(--text-light);opacity:0;animation:fu .8s .2s forwards}
-.intro-title{font-family:'Great Vibes',cursive;font-size:2.2rem;color:var(--gold);margin:.5rem 0;opacity:0;animation:fu .8s .4s forwards}
-.intro-couple{font-family:'Cormorant Garamond',serif;font-size:1.1rem;font-weight:600;letter-spacing:.12em;color:var(--text-dark);opacity:0;animation:fu .8s .6s forwards}
-.intro-btn{margin-top:2.5rem;padding:14px 52px;background:transparent;border:1.5px solid var(--rose-deep);color:var(--rose-deep);font-family:'Cormorant Garamond',serif;font-size:1rem;letter-spacing:.15em;text-transform:uppercase;cursor:pointer;transition:all .4s;position:relative;overflow:hidden;opacity:0;animation:fu .8s .8s forwards}
-.intro-btn::before{content:'';position:absolute;inset:0;background:var(--rose-deep);transform:scaleX(0);transform-origin:left;transition:transform .4s;z-index:-1}
-.intro-btn:hover::before,.intro-btn:active::before{transform:scaleX(1)}
-.intro-btn:hover,.intro-btn:active{color:#fff}
-
-/* MUSIC */
-.music-toggle{position:fixed;top:18px;right:18px;z-index:1000;width:42px;height:42px;border-radius:50%;background:rgba(255,252,247,.9);backdrop-filter:blur(8px);border:1px solid var(--border-rose);cursor:pointer;display:none;align-items:center;justify-content:center;box-shadow:0 2px 12px rgba(196,121,123,.12);transition:.3s}
-.mbars{display:flex;gap:2px;align-items:flex-end;height:16px}
-.mbars span{display:block;width:2.5px;background:var(--rose-deep);border-radius:1px;transition:height .3s}
-.mbars.on span:nth-child(1){animation:b1 .5s ease-in-out infinite}
-.mbars.on span:nth-child(2){animation:b2 .45s ease-in-out infinite .08s}
-.mbars.on span:nth-child(3){animation:b3 .55s ease-in-out infinite .15s}
-.mbars.on span:nth-child(4){animation:b4 .48s ease-in-out infinite .05s}
-.mbars:not(.on) span{height:3px!important}
-@keyframes b1{0%,100%{height:4px}50%{height:13px}}
-@keyframes b2{0%,100%{height:7px}50%{height:16px}}
-@keyframes b3{0%,100%{height:5px}50%{height:11px}}
-@keyframes b4{0%,100%{height:9px}50%{height:14px}}
-
-/* NAV DOTS */
-.ndots{position:fixed;right:14px;top:50%;transform:translateY(-50%);z-index:500;display:none;flex-direction:column;gap:10px}
-.ndot{width:7px;height:7px;border-radius:50%;background:var(--rose-light);border:1px solid var(--rose);cursor:pointer;transition:.3s}
-.ndot.on{background:var(--rose-deep);transform:scale(1.4);border-color:var(--rose-deep)}
-
-/* HEARTS */
-.hbox{position:fixed;inset:0;pointer-events:none;z-index:90;overflow:hidden}
-.fh{position:absolute;bottom:-20px;opacity:0;animation:fha linear infinite}
+:root{--rose:#d4a0a0;--rose-light:#f0d4d4;--rose-deep:#c4797b;--rose-soft:#f5e0e0;--blush:#fdf2f0;--cream:#fdf8f4;--ivory:#fffcf7;--gold:#b8943e;--gold-light:#d4b35a;--sage:#9caa97;--text-dark:#3a2c2c;--text-med:#6b5555;--text-light:#9a8585;--border-rose:rgba(196,121,123,0.2)}
+html{scroll-behavior:smooth}body{font-family:'Noto Serif Khmer','Lora',serif;background:var(--cream);color:var(--text-dark);overflow-x:hidden;-webkit-font-smoothing:antialiased}
+.music-toggle{position:fixed;top:18px;right:18px;z-index:1000;width:42px;height:42px;border-radius:50%;background:rgba(255,252,247,.9);backdrop-filter:blur(8px);border:1px solid var(--border-rose);cursor:pointer;display:flex;align-items:center;justify-content:center;box-shadow:0 2px 12px rgba(196,121,123,.12)}
+.mbars{display:flex;gap:2px;align-items:flex-end;height:16px}.mbars span{display:block;width:2.5px;background:var(--rose-deep);border-radius:1px;transition:height .3s}
+.mbars.on span:nth-child(1){animation:b1 .5s ease-in-out infinite}.mbars.on span:nth-child(2){animation:b2 .45s ease-in-out infinite .08s}.mbars.on span:nth-child(3){animation:b3 .55s ease-in-out infinite .15s}.mbars.on span:nth-child(4){animation:b4 .48s ease-in-out infinite .05s}.mbars:not(.on) span{height:3px!important}
+@keyframes b1{0%,100%{height:4px}50%{height:13px}}@keyframes b2{0%,100%{height:7px}50%{height:16px}}@keyframes b3{0%,100%{height:5px}50%{height:11px}}@keyframes b4{0%,100%{height:9px}50%{height:14px}}
+.ndots{position:fixed;right:14px;top:50%;transform:translateY(-50%);z-index:500;display:flex;flex-direction:column;gap:10px}.ndot{width:7px;height:7px;border-radius:50%;background:var(--rose-light);border:1px solid var(--rose);cursor:pointer;transition:.3s}.ndot.on{background:var(--rose-deep);transform:scale(1.4);border-color:var(--rose-deep)}
+.hbox{position:fixed;inset:0;pointer-events:none;z-index:90;overflow:hidden}.fh{position:absolute;bottom:-20px;opacity:0;animation:fha linear infinite}
 @keyframes fha{0%{opacity:0;transform:translateY(0) rotate(0) scale(.4)}10%{opacity:.55}85%{opacity:.2}100%{opacity:0;transform:translateY(-100vh) rotate(360deg) scale(.9)}}
-
-/* FLORAL CORNERS */
-.fc{position:absolute;pointer-events:none;z-index:2;opacity:.45}
-.fc svg{width:100%;height:100%}
-.fc.tl{top:0;left:0;width:110px;height:110px}
-.fc.tr{top:0;right:0;width:110px;height:110px;transform:scaleX(-1)}
-.fc.bl{bottom:0;left:0;width:110px;height:110px;transform:scaleY(-1)}
-.fc.br{bottom:0;right:0;width:110px;height:110px;transform:scale(-1)}
-
+.fc{position:absolute;pointer-events:none;z-index:2;opacity:.45}.fc svg{width:100%;height:100%}.fc.tl{top:0;left:0;width:110px;height:110px}.fc.tr{top:0;right:0;width:110px;height:110px;transform:scaleX(-1)}.fc.bl{bottom:0;left:0;width:110px;height:110px;transform:scaleY(-1)}.fc.br{bottom:0;right:0;width:110px;height:110px;transform:scale(-1)}
 section{position:relative;overflow:hidden}
-.divider{display:flex;align-items:center;justify-content:center;gap:10px;padding:.8rem 0}
-.dline{width:50px;height:1px;background:linear-gradient(90deg,transparent,var(--rose),transparent)}
-.dicon{color:var(--gold);font-size:.7rem;opacity:.7}
-
-/* HERO */
+.divider{display:flex;align-items:center;justify-content:center;gap:10px;padding:.8rem 0}.dline{width:50px;height:1px;background:linear-gradient(90deg,transparent,var(--rose),transparent)}.dicon{color:var(--gold);font-size:.7rem;opacity:.7}
 #hero{min-height:100vh;min-height:100dvh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:2rem 1.5rem;background:linear-gradient(180deg,var(--ivory) 0%,var(--blush) 40%,var(--rose-soft) 70%,var(--blush) 100%);position:relative}
-.hspk{position:absolute;inset:0;overflow:hidden;pointer-events:none}
-.hsp{position:absolute;color:var(--gold-light);animation:twk 2.5s ease-in-out infinite}
-@keyframes twk{0%,100%{opacity:0;transform:scale(.5) rotate(0)}50%{opacity:.8;transform:scale(1) rotate(20deg)}}
+.hspk{position:absolute;inset:0;overflow:hidden;pointer-events:none}.hsp{position:absolute;color:var(--gold-light);animation:twk 2.5s ease-in-out infinite}@keyframes twk{0%,100%{opacity:0;transform:scale(.5) rotate(0)}50%{opacity:.8;transform:scale(1) rotate(20deg)}}
 .h-pre{font-family:'Cormorant Garamond',serif;font-size:.8rem;letter-spacing:.3em;text-transform:uppercase;color:var(--text-light);margin-bottom:.3rem;opacity:0;animation:fu .8s .2s forwards}
-.h-et{font-family:'Cormorant Garamond',serif;font-size:1.8rem;font-weight:700;letter-spacing:.15em;color:var(--text-dark);margin-bottom:-.2rem;opacity:0;animation:fu .8s .35s forwards}
+.h-et{font-family:'Cormorant Garamond',serif;font-size:1.8rem;font-weight:700;letter-spacing:.15em;color:var(--text-dark);opacity:0;animation:fu .8s .35s forwards}
 .h-party{font-family:'Great Vibes',cursive;font-size:3.2rem;color:var(--gold);line-height:1.1;opacity:0;animation:fu .8s .5s forwards}
-.h-ring{width:160px;height:160px;margin:1.5rem auto;opacity:0;animation:fu .8s .65s forwards}
-.h-ring svg{width:100%;height:100%}
+.h-ring{width:260px;height:260px;margin:1rem auto;opacity:0;animation:fu .8s .65s forwards;position:relative}.h-ring svg{width:100%;height:100%;position:relative;z-index:3}
+/* Pulsing core glow */
+.ring-glow{position:absolute;top:42%;left:50%;transform:translate(-50%,-50%);width:60px;height:60px;border-radius:50%;z-index:1}
+.ring-glow::before{content:'';position:absolute;inset:-30px;border-radius:50%;background:radial-gradient(circle,rgba(212,177,90,.5) 0%,rgba(212,177,90,.15) 35%,transparent 65%);animation:coreBreath 2.8s ease-in-out infinite}
+.ring-glow::after{content:'';position:absolute;inset:-70px;border-radius:50%;background:radial-gradient(circle,rgba(126,203,186,.12) 0%,rgba(212,177,90,.06) 40%,transparent 70%);animation:coreBreath 3.2s ease-in-out infinite .4s}
+/* Energy wave rings */
+.energy-wave{position:absolute;top:42%;left:50%;transform:translate(-50%,-50%);border-radius:50%;border:1px solid rgba(212,177,90,.3);animation:waveExpand 3s ease-out infinite;pointer-events:none;z-index:1}
+@keyframes coreBreath{0%,100%{opacity:.4;transform:scale(.85)}50%{opacity:1;transform:scale(1.2)}}
+@keyframes waveExpand{0%{width:20px;height:20px;opacity:.6}100%{width:220px;height:220px;opacity:0}}
+/* Light rays */
+.ring-rays{position:absolute;top:42%;left:50%;transform:translate(-50%,-50%);width:0;height:0;z-index:1}
+.ring-ray{position:absolute;width:1.5px;background:linear-gradient(0deg,rgba(212,177,90,.6),rgba(212,177,90,.15),transparent);transform-origin:bottom center;border-radius:1px;animation:rayPulse 3s ease-in-out infinite}
+@keyframes rayPulse{0%,100%{opacity:.15;height:40px;width:1.5px}50%{opacity:.65;height:75px;width:2px}}
+/* Glitter particles */
+.glitter-field{position:absolute;inset:0;pointer-events:none;z-index:2;overflow:visible}
+.glitter{position:absolute;border-radius:50%;animation:glitterFloat linear infinite}
+@keyframes glitterFloat{0%{opacity:0;transform:translate(0,0) scale(0)}15%{opacity:.9;transform:scale(1)}85%{opacity:.3}100%{opacity:0;transform:translate(var(--dx),var(--dy)) scale(.3)}}
+/* Orbiting sparkles */
+.orbit{position:absolute;top:42%;left:50%;width:0;height:0;transform:translate(-50%,-50%);z-index:2}
+.orbit-dot{position:absolute;width:4px;height:4px;border-radius:50%;background:radial-gradient(circle,#fff,#d4b35a);box-shadow:0 0 6px rgba(212,177,90,.7);animation:orbitSpin linear infinite}
+@keyframes orbitSpin{0%{transform:rotate(0deg) translateX(var(--r)) rotate(0deg);opacity:.7}50%{opacity:1}100%{transform:rotate(360deg) translateX(var(--r)) rotate(-360deg);opacity:.7}}
+/* Spiraling trails */
+.spiral-trail{position:absolute;top:42%;left:50%;transform:translate(-50%,-50%);width:0;height:0;z-index:1}
+.trail-dot{position:absolute;border-radius:50%;background:rgba(212,177,90,.4);animation:spiralOut ease-out infinite}
+@keyframes spiralOut{0%{opacity:.8;transform:rotate(var(--sa)) translateX(8px) scale(1)}100%{opacity:0;transform:rotate(calc(var(--sa) + 360deg)) translateX(110px) scale(.2)}}
 .h-hon{font-family:'Cormorant Garamond',serif;font-size:.95rem;font-weight:500;color:var(--text-med);letter-spacing:.1em;margin-bottom:.3rem;opacity:0;animation:fu .8s .8s forwards}
 .h-names{font-family:'Cormorant Garamond',serif;font-size:1.6rem;font-weight:700;letter-spacing:.08em;color:var(--text-dark);margin-bottom:.15rem;opacity:0;animation:fu .8s .9s forwards}
 .h-names-km{font-family:'Noto Serif Khmer',serif;font-size:1.2rem;font-weight:600;color:var(--text-dark);opacity:0;animation:fu .8s .95s forwards}
 .h-amp{font-family:'Great Vibes',cursive;color:var(--gold);font-size:1.3em;margin:0 .15em}
 .h-info{margin-top:1.5rem;display:flex;align-items:flex-start;justify-content:center;gap:2rem;opacity:0;animation:fu .8s 1.05s forwards}
-.h-loc{text-align:center;max-width:140px}
-.h-loc-t{font-family:'Cormorant Garamond',serif;font-size:.75rem;color:var(--text-light);line-height:1.5}
-.h-date{text-align:center}
-.h-date-t{font-family:'Cormorant Garamond',serif;font-size:.95rem;font-weight:700;color:var(--text-dark);line-height:1.4}
-.h-date-km{font-family:'Noto Serif Khmer',serif;font-size:.7rem;color:var(--text-light);margin-top:.15rem}
+.h-loc-t{font-family:'Cormorant Garamond',serif;font-size:.75rem;color:var(--text-med);line-height:1.5;text-align:center;max-width:140px}
+.h-date-t{font-family:'Cormorant Garamond',serif;font-size:.95rem;font-weight:700;color:var(--text-dark);line-height:1.4;text-align:center}
+.h-date-km{font-family:'Noto Serif Khmer',serif;font-size:.75rem;font-weight:500;color:var(--text-dark);margin-top:.15rem;text-align:center}
 .h-scroll{position:absolute;bottom:24px;left:50%;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:6px;opacity:0;animation:fu .8s 1.2s forwards}
 .h-scroll span{font-family:'Cormorant Garamond',serif;font-size:.65rem;letter-spacing:.2em;text-transform:uppercase;color:var(--text-light)}
 .schev{width:16px;height:16px;border-right:1.5px solid var(--rose);border-bottom:1.5px solid var(--rose);transform:rotate(45deg);animation:bchev 2s infinite;opacity:.6}
 @keyframes bchev{0%,100%{transform:rotate(45deg) translateY(0)}50%{transform:rotate(45deg) translateY(5px)}}
-
-/* SECTION TITLES */
 .st-en{font-family:'Cormorant Garamond',serif;font-size:.72rem;letter-spacing:.3em;text-transform:uppercase;color:var(--text-light);margin-bottom:.3rem}
 .st-km{font-family:'Noto Serif Khmer',serif;font-size:1.4rem;font-weight:600;color:var(--text-dark);margin-bottom:1.5rem}
-
-/* GALLERY */
 #gallery{padding:4rem 1.5rem;text-align:center;background:linear-gradient(180deg,var(--blush),var(--ivory))}
 .gslider{position:relative;width:100%;max-width:340px;margin:0 auto;aspect-ratio:3/4;border-radius:12px;overflow:hidden;box-shadow:0 12px 40px rgba(196,121,123,.15);border:1px solid var(--border-rose)}
 .gtr{display:flex;height:100%;transition:transform .55s cubic-bezier(.4,0,.2,1)}
 .gsl{min-width:100%;height:100%;display:flex;align-items:center;justify-content:center}
-.gph{text-align:center;padding:2rem}
-.gph .gi{font-size:3rem;margin-bottom:.8rem}
-.gph .gt{font-family:'Noto Serif Khmer',serif;font-size:1.1rem;color:var(--text-dark);font-weight:500}
-.gph .gs{font-family:'Cormorant Garamond',serif;font-size:.8rem;color:var(--text-light);margin-top:.25rem}
-.gdots{display:flex;justify-content:center;gap:7px;margin-top:1.2rem}
-.gd{width:7px;height:7px;border-radius:50%;background:var(--rose-light);border:none;cursor:pointer;transition:.3s}
-.gd.on{background:var(--rose-deep);width:20px;border-radius:4px}
-
-/* DETAILS */
+.gph{text-align:center;padding:2rem}.gph .gi{font-size:3rem;margin-bottom:.8rem}.gph .gt{font-family:'Noto Serif Khmer',serif;font-size:1.1rem;color:var(--text-dark);font-weight:500}.gph .gs{font-family:'Cormorant Garamond',serif;font-size:.8rem;color:var(--text-light);margin-top:.25rem}
+.gdots{display:flex;justify-content:center;gap:7px;margin-top:1.2rem}.gd{width:7px;height:7px;border-radius:50%;background:var(--rose-light);border:none;cursor:pointer;transition:.3s}.gd.on{background:var(--rose-deep);width:20px;border-radius:4px}
 #details{padding:4rem 1.5rem;text-align:center;background:linear-gradient(180deg,var(--ivory),var(--blush),var(--ivory))}
 .dcard{max-width:400px;margin:1.5rem auto 0;background:rgba(255,252,247,.8);border:1px solid var(--border-rose);border-radius:16px;padding:2rem 1.5rem;backdrop-filter:blur(8px)}
-.dcard .di{font-size:1.8rem;margin-bottom:.8rem}
 .dr{display:flex;align-items:flex-start;gap:10px;text-align:left;margin-bottom:1rem;padding:0 .25rem}
-.dr-i{color:var(--rose-deep);font-size:1rem;flex-shrink:0;margin-top:3px}
-.dr-t{font-size:.88rem;line-height:1.6;color:var(--text-dark)}
-.dr-t small{display:block;font-family:'Cormorant Garamond',serif;font-size:.78rem;color:var(--text-light)}
-.map-btn{display:inline-flex;align-items:center;gap:7px;margin-top:1.2rem;padding:11px 28px;background:var(--rose-deep);color:#fff;font-family:'Cormorant Garamond',serif;font-size:.88rem;letter-spacing:.08em;text-decoration:none;border-radius:50px;transition:.3s;border:none;cursor:pointer}
-.map-btn:hover,.map-btn:active{background:var(--text-dark);box-shadow:0 6px 20px rgba(196,121,123,.25)}
-
-/* PARENTS */
+.dr-i{color:var(--rose-deep);font-size:1rem;flex-shrink:0;margin-top:3px}.dr-t{font-size:.88rem;line-height:1.6;color:var(--text-dark)}.dr-t small{display:block;font-family:'Cormorant Garamond',serif;font-size:.78rem;color:var(--text-light)}
+.map-btn{display:inline-flex;align-items:center;gap:7px;margin-top:1.2rem;padding:11px 28px;background:var(--rose-deep);color:#fff;font-family:'Cormorant Garamond',serif;font-size:.88rem;letter-spacing:.08em;text-decoration:none;border-radius:50px;transition:.3s;border:none;cursor:pointer}.map-btn:hover,.map-btn:active{background:var(--text-dark)}
 #parents{padding:4rem 1.5rem;text-align:center;background:linear-gradient(180deg,var(--ivory),var(--blush))}
-.pgrid{display:grid;grid-template-columns:1fr 1fr;gap:1rem;max-width:400px;margin:1.5rem auto 0}
-.pbox{padding:1.5rem 1rem;background:rgba(255,252,247,.7);border:1px solid var(--border-rose);border-radius:14px}
-.pside{font-family:'Cormorant Garamond',serif;font-size:.6rem;letter-spacing:.2em;text-transform:uppercase;color:var(--rose-deep);margin-bottom:.6rem}
-.pname{font-family:'Noto Serif Khmer',serif;font-size:.82rem;font-weight:500;color:var(--text-dark);line-height:1.7}
-
-/* COUNTDOWN */
+.pgrid{display:grid;grid-template-columns:1fr 1fr;gap:1rem;max-width:400px;margin:1.5rem auto 0}.pbox{padding:1.5rem 1rem;background:rgba(255,252,247,.7);border:1px solid var(--border-rose);border-radius:14px}.pside{font-family:'Cormorant Garamond',serif;font-size:.6rem;letter-spacing:.2em;text-transform:uppercase;color:var(--rose-deep);margin-bottom:.6rem}.pname{font-family:'Noto Serif Khmer',serif;font-size:.82rem;font-weight:500;color:var(--text-dark);line-height:1.7}
 #countdown{padding:4rem 1.5rem;text-align:center;background:linear-gradient(180deg,var(--blush),var(--rose-soft),var(--blush));position:relative}
-.cgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;max-width:360px;margin:1.5rem auto 0}
-.citem{background:rgba(255,252,247,.92);border-radius:14px;padding:1.2rem .5rem;box-shadow:0 4px 16px rgba(196,121,123,.1);border:1px solid var(--border-rose)}
-.cnum{font-family:'Cormorant Garamond',serif;font-size:2.2rem;font-weight:700;color:var(--text-dark);line-height:1}
-.clab{font-family:'Noto Serif Khmer',serif;font-size:.68rem;color:var(--text-light);margin-top:.35rem}
-
-/* LOVE STORY */
+.cgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;max-width:360px;margin:1.5rem auto 0}.citem{background:rgba(255,252,247,.92);border-radius:14px;padding:1.2rem .5rem;box-shadow:0 4px 16px rgba(196,121,123,.1);border:1px solid var(--border-rose)}.cnum{font-family:'Cormorant Garamond',serif;font-size:2.2rem;font-weight:700;color:var(--text-dark);line-height:1}.clab{font-family:'Noto Serif Khmer',serif;font-size:.68rem;color:var(--text-light);margin-top:.35rem}
 #lovestory{padding:4rem 1.5rem;background:linear-gradient(180deg,var(--blush),var(--ivory))}
-.tlc{max-width:380px;margin:1.5rem auto 0;position:relative;padding-left:28px}
-.tll{position:absolute;left:7px;top:0;bottom:0;width:1px;background:linear-gradient(180deg,var(--rose-deep),var(--rose-light))}
-.tli{position:relative;margin-bottom:2.5rem;opacity:0;transform:translateY(20px);transition:.7s}
-.tli.vis{opacity:1;transform:translateY(0)}
-.tld{position:absolute;left:-24px;top:3px;width:11px;height:11px;border-radius:50%;background:var(--rose-deep);border:2.5px solid var(--blush);box-shadow:0 0 8px rgba(196,121,123,.3)}
-.tly{font-family:'Cormorant Garamond',serif;font-size:.78rem;font-weight:600;color:var(--rose-deep);letter-spacing:.08em;margin-bottom:.2rem}
-.tlh{font-family:'Noto Serif Khmer',serif;font-size:.95rem;font-weight:600;color:var(--text-dark);margin-bottom:.2rem}
-.tld2{font-family:'Noto Serif Khmer',serif;font-size:.82rem;color:var(--text-med);line-height:1.7}
-
-/* SCHEDULE */
+.tlc{max-width:380px;margin:1.5rem auto 0;position:relative;padding-left:28px}.tll{position:absolute;left:7px;top:0;bottom:0;width:1px;background:linear-gradient(180deg,var(--rose-deep),var(--rose-light))}.tli{position:relative;margin-bottom:2.5rem;opacity:0;transform:translateY(20px);transition:.7s}.tli.vis{opacity:1;transform:translateY(0)}.tldot{position:absolute;left:-24px;top:3px;width:11px;height:11px;border-radius:50%;background:var(--rose-deep);border:2.5px solid var(--blush);box-shadow:0 0 8px rgba(196,121,123,.3)}.tly{font-family:'Cormorant Garamond',serif;font-size:.78rem;font-weight:600;color:var(--rose-deep);letter-spacing:.08em;margin-bottom:.2rem}.tlh{font-family:'Noto Serif Khmer',serif;font-size:.95rem;font-weight:600;color:var(--text-dark);margin-bottom:.2rem}.tldesc{font-family:'Noto Serif Khmer',serif;font-size:.82rem;color:var(--text-med);line-height:1.7}
 #schedule{padding:4rem 1.5rem;text-align:center;background:linear-gradient(180deg,var(--ivory),var(--blush))}
-.sgrid{display:grid;grid-template-columns:1fr 1fr;gap:1rem;max-width:400px;margin:1.5rem auto 0}
-.sitem{background:rgba(255,252,247,.7);border:1px solid var(--border-rose);border-radius:14px;padding:1.5rem 1rem}
-.sico{font-size:1.4rem;margin-bottom:.6rem}
-.stm{font-family:'Cormorant Garamond',serif;font-size:.78rem;font-weight:600;color:var(--rose-deep);margin-bottom:.3rem}
-.snm{font-family:'Noto Serif Khmer',serif;font-size:.82rem;font-weight:500;color:var(--text-dark);line-height:1.4}
-
-/* RSVP */
-#rsvp{padding:4rem 1.5rem;text-align:center;background:linear-gradient(180deg,var(--blush),var(--ivory))}
-.rcard{max-width:380px;margin:1.5rem auto 0}
-.fg{margin-bottom:1.1rem;text-align:left}
-.fl{display:block;font-family:'Noto Serif Khmer',serif;font-size:.78rem;color:var(--rose-deep);margin-bottom:.35rem}
-.fi{width:100%;padding:11px 14px;background:rgba(255,252,247,.6);border:1px solid var(--border-rose);border-radius:8px;color:var(--text-dark);font-family:'Noto Serif Khmer',serif;font-size:.88rem;outline:none;transition:border-color .3s}
-.fi:focus{border-color:var(--rose-deep)}
-.fi::placeholder{color:var(--text-light)}
-.rg{display:flex;gap:.8rem;margin-top:.4rem}
-.ro{flex:1;position:relative}
-.ro input{position:absolute;opacity:0}
-.rl{display:block;padding:11px;text-align:center;background:rgba(255,252,247,.5);border:1px solid var(--border-rose);border-radius:8px;font-family:'Noto Serif Khmer',serif;font-size:.82rem;color:var(--text-dark);cursor:pointer;transition:.3s}
-.ro input:checked+.rl{background:var(--rose-deep);border-color:var(--rose-deep);color:#fff}
-.rbtn{width:100%;padding:13px;margin-top:.6rem;background:linear-gradient(135deg,var(--rose-deep),var(--rose));border:none;border-radius:50px;color:#fff;font-family:'Noto Serif Khmer',serif;font-size:.92rem;font-weight:600;cursor:pointer;transition:.3s;letter-spacing:.05em}
-.rbtn:hover,.rbtn:active{transform:translateY(-2px);box-shadow:0 8px 24px rgba(196,121,123,.25)}
-.rok{display:none;padding:2rem;text-align:center}
-.rok.show{display:block}
-.rok .ri{font-size:2.5rem;margin-bottom:.8rem}
-.rok p{font-family:'Noto Serif Khmer',serif;color:var(--text-dark);font-size:.95rem}
-.rok .rs{font-size:.82rem;color:var(--text-light);margin-top:.3rem}
-
-/* FOOTER */
-#footer{padding:2.5rem 1.5rem;text-align:center;background:var(--ivory);border-top:1px solid var(--border-rose)}
-.fmono{font-family:'Great Vibes',cursive;font-size:1.8rem;color:var(--gold);margin-bottom:.3rem}
-.ftxt{font-family:'Cormorant Garamond',serif;font-size:.78rem;color:var(--text-light);letter-spacing:.15em;text-transform:uppercase}
-
-@keyframes fu{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}
-.reveal{opacity:0;transform:translateY(24px);transition:opacity .8s,transform .8s}
-.reveal.vis{opacity:1;transform:translateY(0)}
+.sgrid{display:grid;grid-template-columns:1fr 1fr;gap:1rem;max-width:400px;margin:1.5rem auto 0}.sitem{background:rgba(255,252,247,.7);border:1px solid var(--border-rose);border-radius:14px;padding:1.5rem 1rem}.sico{font-size:1.4rem;margin-bottom:.6rem}.stm{font-family:'Cormorant Garamond',serif;font-size:.78rem;font-weight:600;color:var(--rose-deep);margin-bottom:.3rem}.snm{font-family:'Noto Serif Khmer',serif;font-size:.82rem;font-weight:500;color:var(--text-dark);line-height:1.4}
+#footer{padding:2.5rem 1.5rem;text-align:center;background:var(--ivory);border-top:1px solid var(--border-rose)}.fmono{font-family:'Great Vibes',cursive;font-size:1.8rem;color:var(--gold);margin-bottom:.3rem}.ftxt{font-family:'Cormorant Garamond',serif;font-size:.78rem;color:var(--text-light);letter-spacing:.15em;text-transform:uppercase}
+@keyframes fu{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}.reveal{opacity:0;transform:translateY(24px);transition:opacity .8s,transform .8s}.reveal.vis{opacity:1;transform:translateY(0)}
 @media(min-width:768px){.h-et{font-size:2.2rem}.h-party{font-size:4rem}.h-names{font-size:2rem}.cnum{font-size:2.8rem}}
 </style>
 </head>
 <body>
 
-<!-- INTRO -->
-<div id="intro">
-  <svg class="intro-floral tl" viewBox="0 0 150 150" fill="none"><circle cx="35" cy="35" r="18" fill="#f0d4d4" opacity=".6"/><circle cx="28" cy="42" r="12" fill="#d4a0a0" opacity=".4"/><circle cx="45" cy="28" r="10" fill="#e8bcbc" opacity=".5"/><ellipse cx="55" cy="50" rx="6" ry="10" fill="#9caa97" opacity=".5" transform="rotate(-30 55 50)"/><ellipse cx="20" cy="58" rx="5" ry="9" fill="#9caa97" opacity=".4" transform="rotate(20 20 58)"/><ellipse cx="50" cy="20" rx="4" ry="8" fill="#c5d4c0" opacity=".5" transform="rotate(-50 50 20)"/></svg>
-  <svg class="intro-floral br" viewBox="0 0 150 150" fill="none"><circle cx="35" cy="35" r="18" fill="#f0d4d4" opacity=".6"/><circle cx="28" cy="42" r="12" fill="#d4a0a0" opacity=".4"/><circle cx="45" cy="28" r="10" fill="#e8bcbc" opacity=".5"/><ellipse cx="55" cy="50" rx="6" ry="10" fill="#9caa97" opacity=".5" transform="rotate(-30 55 50)"/><ellipse cx="20" cy="58" rx="5" ry="9" fill="#9caa97" opacity=".4" transform="rotate(20 20 58)"/></svg>
-  <div class="intro-ring">
-    <svg viewBox="0 0 120 120" fill="none">
-      <rect x="25" y="55" width="70" height="45" rx="4" fill="#3a4a5a" opacity=".85"/>
-      <rect x="28" y="50" width="64" height="8" rx="2" fill="#4a5a6a" opacity=".7"/>
-      <rect x="32" y="60" width="56" height="35" rx="3" fill="#f5e0e0"/>
-      <ellipse cx="60" cy="68" rx="12" ry="6" stroke="#d4b35a" stroke-width="3" fill="none"/>
-      <circle cx="60" cy="62" r="4" fill="#7ecbba" opacity=".7"/>
-      <text x="42" y="50" fill="#d4b35a" font-size="10">✦</text>
-      <text x="72" y="46" fill="#d4b35a" font-size="8">✦</text>
-      <text x="82" y="58" fill="#d4b35a" font-size="6">✦</text>
-      <text x="30" y="42" fill="#d4b35a" font-size="7" opacity=".6">✦</text>
-    </svg>
-  </div>
-  <div class="intro-pre">Please join us for an</div>
-  <div class="intro-title">Engagement Party</div>
-  <div class="intro-couple">SENGSEYHA & KANIKA</div>
-  <button class="intro-btn" onclick="openInvite()">Open Invitation</button>
-</div>
+<button class="music-toggle" id="musicBtn" onclick="toggleAudio()"><div class="mbars" id="mBars"><span></span><span></span><span></span><span></span></div></button>
+<iframe id="ytPlayer" style="position:fixed;width:1px;height:1px;border:0;opacity:0;pointer-events:none;top:-10px;left:-10px" allow="autoplay;encrypted-media"></iframe>
 
-<!-- MUSIC -->
-<button class="music-toggle" id="musicBtn" onclick="toggleAudio()">
-  <div class="mbars" id="mBars"><span></span><span></span><span></span><span></span></div>
-</button>
-
-<!-- YouTube audio via hidden iframe -->
-<iframe id="ytPlayer" style="display:none" allow="autoplay"></iframe>
-
-<!-- NAV DOTS -->
 <div class="ndots" id="ndots">
-  <div class="ndot on" data-s="hero"></div>
-  <div class="ndot" data-s="gallery"></div>
-  <div class="ndot" data-s="details"></div>
-  <div class="ndot" data-s="countdown"></div>
-  <div class="ndot" data-s="lovestory"></div>
-  <div class="ndot" data-s="schedule"></div>
-  <div class="ndot" data-s="rsvp"></div>
+<div class="ndot on" data-s="hero"></div><div class="ndot" data-s="gallery"></div><div class="ndot" data-s="details"></div><div class="ndot" data-s="countdown"></div><div class="ndot" data-s="lovestory"></div><div class="ndot" data-s="schedule"></div>
 </div>
 
-<!-- HEARTS -->
 <div class="hbox" id="hbox"></div>
 
-<!-- HERO -->
 <section id="hero">
-  <svg class="fc tl" viewBox="0 0 110 110" fill="none"><circle cx="22" cy="22" r="16" fill="#f0d4d4" opacity=".5"/><circle cx="15" cy="30" r="10" fill="#d4a0a0" opacity=".35"/><circle cx="32" cy="14" r="8" fill="#e8bcbc" opacity=".45"/><ellipse cx="40" cy="35" rx="5" ry="9" fill="#9caa97" opacity=".45" transform="rotate(-25 40 35)"/><ellipse cx="12" cy="42" rx="4" ry="7" fill="#c5d4c0" opacity=".4" transform="rotate(15 12 42)"/><ellipse cx="35" cy="8" rx="3" ry="7" fill="#9caa97" opacity=".35" transform="rotate(-45 35 8)"/></svg>
-  <svg class="fc tr" viewBox="0 0 110 110" fill="none"><circle cx="22" cy="22" r="16" fill="#f0d4d4" opacity=".5"/><circle cx="15" cy="30" r="10" fill="#d4a0a0" opacity=".35"/><circle cx="32" cy="14" r="8" fill="#e8bcbc" opacity=".45"/><ellipse cx="40" cy="35" rx="5" ry="9" fill="#9caa97" opacity=".45" transform="rotate(-25 40 35)"/></svg>
-  <svg class="fc bl" viewBox="0 0 110 110" fill="none"><circle cx="22" cy="22" r="16" fill="#f0d4d4" opacity=".5"/><circle cx="15" cy="30" r="10" fill="#d4a0a0" opacity=".35"/><circle cx="32" cy="14" r="8" fill="#e8bcbc" opacity=".45"/><ellipse cx="40" cy="35" rx="5" ry="9" fill="#9caa97" opacity=".45" transform="rotate(-25 40 35)"/></svg>
-  <svg class="fc br" viewBox="0 0 110 110" fill="none"><circle cx="22" cy="22" r="16" fill="#f0d4d4" opacity=".5"/><circle cx="15" cy="30" r="10" fill="#d4a0a0" opacity=".35"/><circle cx="32" cy="14" r="8" fill="#e8bcbc" opacity=".45"/></svg>
-  <div class="hspk" id="hspk"></div>
-  <div style="position:relative;z-index:3">
-    <div class="h-pre">Please join us for an</div>
-    <div class="h-et">ENGAGEMENT</div>
-    <div class="h-party">Party</div>
-    <div class="h-ring">
-      <svg viewBox="0 0 160 160" fill="none">
-        <radialGradient id="rg"><stop offset="0%" stop-color="#f5e0e0" stop-opacity=".6"/><stop offset="100%" stop-color="#f5e0e0" stop-opacity="0"/></radialGradient>
-        <circle cx="80" cy="80" r="65" fill="url(#rg)"/>
-        <path d="M35 85L40 140H120L125 85Z" fill="#3a4a5c"/>
-        <path d="M40 85L43 135H117L120 85Z" fill="#f5e0e0"/>
-        <path d="M30 85L38 55H122L130 85Z" fill="#4a5c6e" opacity=".85"/>
-        <path d="M38 55L42 80H118L122 55Z" fill="#f0d4d4" opacity=".6"/>
-        <ellipse cx="80" cy="95" rx="16" ry="7" stroke="#d4b35a" stroke-width="3.5" fill="none"/>
-        <circle cx="80" cy="88" r="5" fill="#7ecbba"/><circle cx="80" cy="88" r="3" fill="#a8e0d4" opacity=".6"/>
-        <text x="50" y="60" fill="#d4b35a" font-size="14" opacity=".8">✦</text>
-        <text x="105" y="55" fill="#d4b35a" font-size="10" opacity=".7">✦</text>
-        <text x="115" y="75" fill="#d4b35a" font-size="8" opacity=".5">✦</text>
-        <text x="40" y="48" fill="#d4b35a" font-size="9" opacity=".5">✦</text>
-      </svg>
-    </div>
-    <div class="h-hon">Honoring</div>
-    <div class="h-names">SENGSEYHA <span class="h-amp">&amp;</span> KANIKA</div>
-    <div class="h-names-km">ហឿង សេងសីហា <span class="h-amp">&amp;</span> យ៉ា កន្និកា</div>
-    <div class="h-info">
-      <div class="h-loc"><div class="h-loc-t">Stueng Dach Village,<br>Bavel Commune,<br>Bavel District,<br>Battambang Province</div></div>
-      <div class="h-date"><div class="h-date-t">SATURDAY,<br>20 JUNE 2026</div><div class="h-date-km">ថ្ងៃទី២០ ខែមិថុនា ឆ្នាំ២០២៦</div></div>
-    </div>
-  </div>
-  <!-- <div class="h-scroll"><span>Scroll</span><div class="schev"></div></div> -->
+<svg class="fc tl" viewBox="0 0 110 110" fill="none"><circle cx="22" cy="22" r="16" fill="#f0d4d4" opacity=".5"/><circle cx="15" cy="30" r="10" fill="#d4a0a0" opacity=".35"/><circle cx="32" cy="14" r="8" fill="#e8bcbc" opacity=".45"/><ellipse cx="40" cy="35" rx="5" ry="9" fill="#9caa97" opacity=".45" transform="rotate(-25 40 35)"/><ellipse cx="12" cy="42" rx="4" ry="7" fill="#c5d4c0" opacity=".4" transform="rotate(15 12 42)"/></svg><svg class="fc tr" viewBox="0 0 110 110" fill="none"><circle cx="22" cy="22" r="16" fill="#f0d4d4" opacity=".5"/><circle cx="15" cy="30" r="10" fill="#d4a0a0" opacity=".35"/><circle cx="32" cy="14" r="8" fill="#e8bcbc" opacity=".45"/><ellipse cx="40" cy="35" rx="5" ry="9" fill="#9caa97" opacity=".45" transform="rotate(-25 40 35)"/></svg><svg class="fc bl" viewBox="0 0 110 110" fill="none"><circle cx="22" cy="22" r="16" fill="#f0d4d4" opacity=".5"/><circle cx="15" cy="30" r="10" fill="#d4a0a0" opacity=".35"/><ellipse cx="40" cy="35" rx="5" ry="9" fill="#9caa97" opacity=".45" transform="rotate(-25 40 35)"/></svg><svg class="fc br" viewBox="0 0 110 110" fill="none"><circle cx="22" cy="22" r="16" fill="#f0d4d4" opacity=".5"/><circle cx="15" cy="30" r="10" fill="#d4a0a0" opacity=".35"/></svg>
+<div class="hspk" id="hspk"></div>
+<div style="position:relative;z-index:3">
+<div class="h-pre">Please join us for an</div>
+<div class="h-et">ENGAGEMENT</div>
+<div class="h-party">Party</div>
+<div class="h-ring">
+<div class="ring-glow"></div>
+<div class="ring-rays" id="ringRays"></div>
+<div class="glitter-field" id="glitterField"></div>
+<div class="orbit" id="orbitContainer"></div>
+<div class="spiral-trail" id="spiralTrail"></div>
+<svg viewBox="0 0 260 260" fill="none" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<radialGradient id="outerAura" cx="50%" cy="38%"><stop offset="0%" stop-color="#d4b35a" stop-opacity=".2"/><stop offset="35%" stop-color="#d4b35a" stop-opacity=".08"/><stop offset="70%" stop-color="#7ecbba" stop-opacity=".04"/><stop offset="100%" stop-color="#d4b35a" stop-opacity="0"/></radialGradient>
+<radialGradient id="gemCore"><stop offset="0%" stop-color="#fff" stop-opacity="1"/><stop offset="20%" stop-color="#b8f0e0" stop-opacity=".9"/><stop offset="50%" stop-color="#5ec4ac" stop-opacity=".8"/><stop offset="100%" stop-color="#7ecbba" stop-opacity="0"/></radialGradient>
+<linearGradient id="ringGold" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#f0e0a0"/><stop offset="50%" stop-color="#d4b35a"/><stop offset="100%" stop-color="#a07828"/></linearGradient>
+<linearGradient id="boxLid" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#5a6a7e"/><stop offset="100%" stop-color="#3a4a5c"/></linearGradient>
+<linearGradient id="boxBase" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#3a4a5c"/><stop offset="100%" stop-color="#2a3a4c"/></linearGradient>
+<linearGradient id="lining" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#fce8e8"/><stop offset="100%" stop-color="#f0c8c8"/></linearGradient>
+<filter id="megaGlow"><feGaussianBlur stdDeviation="6"/></filter>
+<filter id="softGlow"><feGaussianBlur stdDeviation="3"/></filter>
+<filter id="tinyGlow"><feGaussianBlur stdDeviation="1.5"/></filter>
+</defs>
+<!-- Massive aura field -->
+<circle cx="130" cy="100" r="120" fill="url(#outerAura)">
+<animate attributeName="r" values="110;125;110" dur="3s" repeatCount="indefinite"/>
+</circle>
+<!-- Secondary aura pulse -->
+<circle cx="130" cy="100" r="85" fill="none" stroke="rgba(212,177,90,.06)" stroke-width="20">
+<animate attributeName="r" values="70;95;70" dur="4s" repeatCount="indefinite"/>
+<animate attributeName="stroke-opacity" values=".03;.1;.03" dur="4s" repeatCount="indefinite"/>
+</circle>
+<!-- Light beams from gem - major -->
+<g opacity=".35">
+<line x1="130" y1="110" x2="130" y2="10" stroke="url(#ringGold)" stroke-width="1.2"><animate attributeName="stroke-opacity" values=".2;.5;.2" dur="2.5s" repeatCount="indefinite"/></line>
+<line x1="130" y1="110" x2="60" y2="25" stroke="#d4b35a" stroke-width=".8"><animate attributeName="stroke-opacity" values=".15;.4;.15" dur="3s" repeatCount="indefinite"/></line>
+<line x1="130" y1="110" x2="200" y2="20" stroke="#d4b35a" stroke-width=".8"><animate attributeName="stroke-opacity" values=".1;.35;.1" dur="2.8s" repeatCount="indefinite"/></line>
+<line x1="130" y1="110" x2="30" y2="60" stroke="#d4b35a" stroke-width=".6"><animate attributeName="stroke-opacity" values=".1;.3;.1" dur="3.5s" repeatCount="indefinite"/></line>
+<line x1="130" y1="110" x2="230" y2="55" stroke="#d4b35a" stroke-width=".6"><animate attributeName="stroke-opacity" values=".08;.25;.08" dur="3.2s" repeatCount="indefinite"/></line>
+<!-- Diagonal beams -->
+<line x1="130" y1="110" x2="85" y2="15" stroke="#d4b35a" stroke-width=".5"><animate attributeName="stroke-opacity" values=".1;.3;.1" dur="2.6s" repeatCount="indefinite"/></line>
+<line x1="130" y1="110" x2="175" y2="12" stroke="#d4b35a" stroke-width=".5"><animate attributeName="stroke-opacity" values=".08;.28;.08" dur="3.1s" repeatCount="indefinite"/></line>
+<line x1="130" y1="110" x2="15" y2="85" stroke="#d4b35a" stroke-width=".3"><animate attributeName="stroke-opacity" values=".05;.2;.05" dur="4s" repeatCount="indefinite"/></line>
+<line x1="130" y1="110" x2="245" y2="80" stroke="#d4b35a" stroke-width=".3"><animate attributeName="stroke-opacity" values=".05;.2;.05" dur="3.8s" repeatCount="indefinite"/></line>
+</g>
+<!-- Box base -->
+<path d="M62 130 L68 195 H192 L198 130 Z" fill="url(#boxBase)"/>
+<path d="M66 130 L70 190 H190 L194 130 Z" fill="url(#lining)"/>
+<ellipse cx="130" cy="160" rx="38" ry="16" fill="#f0c0c0" opacity=".25"/>
+<!-- Box lid -->
+<path d="M55 130 L64 80 H196 L205 130 Z" fill="url(#boxLid)" opacity=".9"/>
+<path d="M64 80 L70 110 H190 L196 80 Z" fill="#f0d4d4" opacity=".4"/>
+<line x1="64" y1="80" x2="196" y2="80" stroke="#8a9aae" stroke-width=".5" opacity=".35"/>
+<!-- Ring band with extra glow -->
+<ellipse cx="130" cy="135" rx="22" ry="8" stroke="#d4b35a" stroke-width="8" fill="none" opacity=".08" filter="url(#megaGlow)"/>
+<ellipse cx="130" cy="135" rx="22" ry="8" stroke="#d4b35a" stroke-width="5" fill="none" opacity=".15" filter="url(#softGlow)"/>
+<ellipse cx="130" cy="135" rx="22" ry="8" stroke="url(#ringGold)" stroke-width="4" fill="none"/>
+<!-- Ring highlight -->
+<ellipse cx="130" cy="135" rx="22" ry="8" stroke="#f0e0a0" stroke-width="1" fill="none" opacity=".4"/>
+<!-- Prongs -->
+<line x1="123" y1="128" x2="125" y2="118" stroke="#d4b35a" stroke-width="2" stroke-linecap="round"/>
+<line x1="137" y1="128" x2="135" y2="118" stroke="#d4b35a" stroke-width="2" stroke-linecap="round"/>
+<!-- Gem mega glow -->
+<circle cx="130" cy="113" r="25" fill="url(#gemCore)" filter="url(#megaGlow)" opacity=".6">
+<animate attributeName="r" values="22;28;22" dur="2.5s" repeatCount="indefinite"/>
+</circle>
+<circle cx="130" cy="113" r="15" fill="url(#gemCore)" filter="url(#softGlow)" opacity=".7">
+<animate attributeName="opacity" values=".5;.9;.5" dur="2s" repeatCount="indefinite"/>
+</circle>
+<!-- Gemstone facets -->
+<circle cx="130" cy="113" r="8" fill="#3aaa8a"/>
+<circle cx="130" cy="113" r="7" fill="#5ec4ac"/>
+<circle cx="130" cy="112" r="5" fill="#7edbc4" opacity=".8"/>
+<circle cx="130" cy="110" r="3" fill="#b8f0e0" opacity=".9"/>
+<circle cx="128" cy="109" r="1.5" fill="#fff"/>
+<circle cx="133" cy="112" r=".8" fill="#fff" opacity=".7"/>
+<!-- Animated sparkle stars -->
+<g>
+<text x="85" y="65" fill="#d4b35a" font-size="16" opacity=".8"><animate attributeName="opacity" values=".3;1;.3" dur="2s" repeatCount="indefinite"/>&#x2726;</text>
+<text x="165" y="58" fill="#d4b35a" font-size="13"><animate attributeName="opacity" values=".2;.9;.2" dur="2.4s" repeatCount="indefinite" begin=".3s"/>&#x2726;</text>
+<text x="70" y="95" fill="#d4b35a" font-size="10"><animate attributeName="opacity" values=".3;.8;.3" dur="1.8s" repeatCount="indefinite" begin=".6s"/>&#x2726;</text>
+<text x="185" y="85" fill="#d4b35a" font-size="11"><animate attributeName="opacity" values=".2;.7;.2" dur="2.2s" repeatCount="indefinite" begin=".2s"/>&#x2726;</text>
+<text x="120" y="40" fill="#d4b35a" font-size="14"><animate attributeName="opacity" values=".2;.9;.2" dur="2.6s" repeatCount="indefinite" begin=".5s"/>&#x2726;</text>
+<text x="55" y="55" fill="#d4b35a" font-size="7"><animate attributeName="opacity" values=".1;.6;.1" dur="3s" repeatCount="indefinite"/>&#x2727;</text>
+<text x="200" y="50" fill="#d4b35a" font-size="8"><animate attributeName="opacity" values=".1;.5;.1" dur="3.2s" repeatCount="indefinite" begin=".8s"/>&#x2727;</text>
+<text x="100" y="25" fill="#d4b35a" font-size="9"><animate attributeName="opacity" values=".1;.7;.1" dur="2.8s" repeatCount="indefinite" begin="1s"/>&#x2726;</text>
+<text x="160" y="30" fill="#d4b35a" font-size="6"><animate attributeName="opacity" values=".15;.5;.15" dur="3.5s" repeatCount="indefinite"/>&#x2727;</text>
+</g>
+<!-- Luminous particle ring -->
+<g>
+<circle cx="80" cy="55" r="1.5" fill="#d4b35a"><animate attributeName="opacity" values=".1;.8;.1" dur="2s" repeatCount="indefinite"/><animate attributeName="r" values="1;2;1" dur="2s" repeatCount="indefinite"/></circle>
+<circle cx="180" cy="48" r="1.2" fill="#d4b35a"><animate attributeName="opacity" values=".15;.7;.15" dur="2.3s" repeatCount="indefinite"/></circle>
+<circle cx="130" cy="20" r="1.5" fill="#d4b35a"><animate attributeName="opacity" values=".1;.9;.1" dur="1.8s" repeatCount="indefinite"/><animate attributeName="r" values="1;2.5;1" dur="1.8s" repeatCount="indefinite"/></circle>
+<circle cx="50" cy="78" r="1" fill="#7ecbba"><animate attributeName="opacity" values=".1;.6;.1" dur="3s" repeatCount="indefinite"/></circle>
+<circle cx="210" cy="72" r="1" fill="#7ecbba"><animate attributeName="opacity" values=".1;.5;.1" dur="2.8s" repeatCount="indefinite"/></circle>
+<circle cx="105" cy="35" r=".8" fill="#f0e0a0"><animate attributeName="opacity" values=".2;.7;.2" dur="2.5s" repeatCount="indefinite"/></circle>
+<circle cx="155" cy="28" r=".8" fill="#f0e0a0"><animate attributeName="opacity" values=".15;.6;.15" dur="2.7s" repeatCount="indefinite"/></circle>
+</g>
+</svg>
+</div>
+<div class="h-hon">Honoring</div>
+<div class="h-names">SENGSEYHA <span class="h-amp">&amp;</span> KANIKA</div>
+<div class="h-names-km">ហើង សេងសីហា <span class="h-amp">&amp;</span> យ៉ា កន្និកា</div>
+<div class="h-info">
+<div><div class="h-loc-t">Stueng Dach Village,<br>Bavel Commune,<br>Bavel District,<br>Battambang Province</div></div>
+<div><div class="h-date-t">SATURDAY,<br>20 JUNE 2026</div><div class="h-date-km">ថ្ងៃទី២០ ខែមិថុនា ឆ្នាំ២០២៦</div></div>
+</div>
+</div>
+<div class="h-scroll"><span>Scroll</span><div class="schev"></div></div>
 </section>
 
-<!-- GALLERY -->
 <section id="gallery">
-  <div class="st-en reveal">Our Moments</div>
-  <div class="st-km reveal">វិចិត្រសាល</div>
-  <div class="divider reveal"><div class="dline"></div><div class="dicon">✦</div><div class="dline"></div></div>
-  <div class="gslider reveal" id="gS">
-    <div class="gtr" id="gT">
-      <div class="gsl" style="background:linear-gradient(135deg,#f5e0e0,#fdf2f0,#f0d4d4)"><div class="gph"><div class="gi">💍</div><div class="gt">រូបថតគូស្នេហ៍</div><div class="gs">Pre-Wedding Photos</div></div></div>
-      <div class="gsl" style="background:linear-gradient(135deg,#f0d4d4,#fdf8f4,#e8bcbc)"><div class="gph"><div class="gi">🌸</div><div class="gt">ស្នេហាយើង</div><div class="gs">Our Love</div></div></div>
-      <div class="gsl" style="background:linear-gradient(135deg,#c5d4c0,#fdf8f4,#f0d4d4)"><div class="gph"><div class="gi">✨</div><div class="gt">រួមគ្នារហូត</div><div class="gs">Together Forever</div></div></div>
-    </div>
-  </div>
-  <div class="gdots reveal" id="gD"><button class="gd on" data-i="0"></button><button class="gd" data-i="1"></button><button class="gd" data-i="2"></button></div>
+<div class="st-en reveal">Our Moments</div><div class="st-km reveal">វិចិត្រសាល</div>
+<div class="divider reveal"><div class="dline"></div><div class="dicon">&#x2726;</div><div class="dline"></div></div>
+<div class="gslider reveal" id="gS"><div class="gtr" id="gT">
+<div class="gsl" style="background-image:url('https://lh3.googleusercontent.com/d/1QfD7drrVBqSdZNvO3ACwHvC-GukpTR8U');background-size:cover;background-position:center"></div>
+<div class="gsl" style="background:linear-gradient(135deg,#f0d4d4,#fdf8f4,#e8bcbc)"><div class="gph"><div class="gi">🌸</div><div class="gt">ស្នេហាយើង</div><div class="gs">Our Love</div></div></div>
+<div class="gsl" style="background:linear-gradient(135deg,#c5d4c0,#fdf8f4,#f0d4d4)"><div class="gph"><div class="gi">✨</div><div class="gt">រួមគ្នារហូត</div><div class="gs">Together Forever</div></div></div>
+</div></div>
+<div class="gdots reveal" id="gD"><button class="gd on" data-i="0"></button><button class="gd" data-i="1"></button><button class="gd" data-i="2"></button></div>
 </section>
 
-<!-- DETAILS -->
 <section id="details">
-  <div class="st-en reveal">Ceremony</div>
-  <div class="st-km reveal">ពិធីមង្គលការ</div>
-  <div class="divider reveal"><div class="dline"></div><div class="dicon">✦</div><div class="dline"></div></div>
-  <div class="dcard reveal">
-    <div class="di">💒</div>
-    <div style="font-family:'Noto Serif Khmer',serif;font-size:1.15rem;font-weight:600;color:var(--text-dark);margin-bottom:.15rem">ថ្ងៃទី២០ ខែមិថុនា ឆ្នាំ២០២៦</div>
-    <div style="font-family:'Cormorant Garamond',serif;font-size:.88rem;color:var(--text-light);margin-bottom:1.2rem">Saturday, June 20, 2026</div>
-    <div class="divider" style="margin:.8rem 0"><div class="dline"></div><div class="dicon">♡</div><div class="dline"></div></div>
-    <div class="dr"><div class="dr-i">🕗</div><div class="dr-t">ម៉ោង ០៨:០០ ព្រឹក<small>8:00 AM</small></div></div>
-    <div class="dr"><div class="dr-i">📍</div><div class="dr-t">ភូមិស្ទឹងដាច់ ឃុំបវេល ស្រុកបវេល ខេត្តបាត់ដំបង<small>Stueng Dach Village, Bavel Commune, Bavel District, Battambang Province</small></div></div>
-    <a href="https://www.google.com/maps/dir/?api=1&destination=13.245778,102.873472" target="_blank" class="map-btn">📍 Open Google Maps</a>
-  </div>
+<div class="st-en reveal">Ceremony</div><div class="st-km reveal">ពិធីភ្ជាប់ពាក្យ</div>
+<div class="divider"><div class="dline"></div><div class="dicon">&#x2726;</div><div class="dline"></div></div>
+<div class="dcard reveal">
+<div style="font-size:1.8rem;margin-bottom:.8rem">💒</div>
+<div style="font-family:'Noto Serif Khmer',serif;font-size:1.15rem;font-weight:600;color:var(--text-dark);margin-bottom:.15rem">ថ្ងៃទី២០ ខែមិថុនា ឆ្នាំ២០២៦</div>
+<div style="font-family:'Cormorant Garamond',serif;font-size:.88rem;color:var(--text-light);margin-bottom:1.2rem">Saturday, June 20, 2026</div>
+<div class="divider" style="margin:.8rem 0"><div class="dline"></div><div class="dicon">&#x2661;</div><div class="dline"></div></div>
+<div class="dr"><div class="dr-i">🕗</div><div class="dr-t">ម៉ោង ០៨:០០ ព្រឹក<small>8:00 AM</small></div></div>
+<div class="dr"><div class="dr-i">📍</div><div class="dr-t">ភូមិស្ទឹងដាច់ ឃុំបវេល ស្រុកបវេល ខេត្តបាត់ដំបង<small>Stueng Dach Village, Bavel Commune, Bavel District, Battambang Province</small></div></div>
+<a href="https://www.google.com/maps/dir/?api=1&destination=13.245778,102.873472" target="_blank" class="map-btn">📍 Open Google Maps</a>
+</div>
 </section>
 
-<!-- PARENTS -->
 <section id="parents">
-  <div class="st-en reveal">Families</div>
-  <div class="st-km reveal">គ្រួសារ</div>
-  <div class="divider reveal"><div class="dline"></div><div class="dicon">✦</div><div class="dline"></div></div>
-  <div class="pgrid reveal">
-    <div class="pbox"><div class="pside">Groom's Parents</div><div class="pname">លោក ស គឹមសេង<br>លោកស្រី កែវ សុខា</div></div>
-    <div class="pbox"><div class="pside">Bride's Parents</div><div class="pname">លោក ....<br>លោកស្រី ....</div></div>
-  </div>
+<div class="st-en reveal">Families</div><div class="st-km reveal">គ្រួសារ</div>
+<div class="divider"><div class="dline"></div><div class="dicon">&#x2726;</div><div class="dline"></div></div>
+<div class="pgrid reveal">
+<div class="pbox"><div class="pside">Groom's Parents</div><div class="pname">លោក ស គឹមសេង<br>លោកស្រី កែវ សុខា</div></div>
+<div class="pbox"><div class="pside">Bride's Parents</div><div class="pname">លោក ....<br>លោកស្រី ....</div></div>
+</div>
 </section>
 
-<!-- COUNTDOWN -->
 <section id="countdown">
-  <svg class="fc tl" viewBox="0 0 100 100" fill="none"><circle cx="22" cy="22" r="16" fill="#f0d4d4" opacity=".4"/><circle cx="15" cy="30" r="10" fill="#d4a0a0" opacity=".3"/><ellipse cx="40" cy="35" rx="5" ry="9" fill="#9caa97" opacity=".35" transform="rotate(-25 40 35)"/></svg>
-  <svg class="fc br" viewBox="0 0 100 100" fill="none"><circle cx="22" cy="22" r="16" fill="#f0d4d4" opacity=".4"/><circle cx="15" cy="30" r="10" fill="#d4a0a0" opacity=".3"/><ellipse cx="40" cy="35" rx="5" ry="9" fill="#9caa97" opacity=".35" transform="rotate(-25 40 35)"/></svg>
-  <div class="st-en reveal">Counting Down</div>
-  <div class="st-km reveal">រាប់ថយក្រោយ</div>
-  <div class="divider reveal"><div class="dline"></div><div class="dicon">✦</div><div class="dline"></div></div>
-  <div class="cgrid reveal">
-    <div class="citem"><div class="cnum" id="cD">00</div><div class="clab">ថ្ងៃ</div></div>
-    <div class="citem"><div class="cnum" id="cH">00</div><div class="clab">ម៉ោង</div></div>
-    <div class="citem"><div class="cnum" id="cM">00</div><div class="clab">នាទី</div></div>
-    <div class="citem"><div class="cnum" id="cS">00</div><div class="clab">វិនាទី</div></div>
-  </div>
+<div class="st-en reveal">Counting Down</div><div class="st-km reveal">រាប់ថយក្រោយ</div>
+<div class="divider"><div class="dline"></div><div class="dicon">&#x2726;</div><div class="dline"></div></div>
+<div class="cgrid reveal">
+<div class="citem"><div class="cnum" id="cD">00</div><div class="clab">ថ្ងៃ</div></div>
+<div class="citem"><div class="cnum" id="cH">00</div><div class="clab">ម៉ោង</div></div>
+<div class="citem"><div class="cnum" id="cM">00</div><div class="clab">នាទី</div></div>
+<div class="citem"><div class="cnum" id="cS">00</div><div class="clab">វិនាទី</div></div>
+</div>
 </section>
 
-<!-- LOVE STORY -->
 <section id="lovestory">
-  <div style="text-align:center">
-    <div class="st-en reveal">Our Journey</div>
-    <div class="st-km reveal">រឿងរ៉ាវស្នេហា</div>
-    <div class="divider reveal"><div class="dline"></div><div class="dicon">♡</div><div class="dline"></div></div>
-  </div>
-  <div class="tlc">
-    <div class="tll"></div>
-    <div class="tli"><div class="tld"></div><div class="tly">🌸 2025 — First Meeting</div><div class="tlh">ការជួបគ្នាលើកដំបូង</div><div class="tld2">បងបានត្រឹមស្គាល់ហ្នឹងលឺឈ្មោះអូន ចូលឆ្នាំខ្មែរ</div></div>
-    <div class="tli"><div class="tld"></div><div class="tly">💕 2026 — Getting Closer</div><div class="tlh">ស្គាល់ចិត្តគ្នា</div><div class="tld2">បងបានលេងម្សៅបាតមុខអូន យើងញាុំមួយយើងស្គាល់ចិត្តគ្នាបង សុំចូលសួរ</div></div>
-    <div class="tli"><div class="tld"></div><div class="tly">💍 20 June 2026 — Engagement Day</div><div class="tlh">ថ្ងៃមង្គលការ</div><div class="tld2">ថ្ងៃដ៏ពិសេសរបស់យើង — ស្រឡាញ់គ្នារហូត ❤️</div></div>
-  </div>
+<div style="text-align:center">
+<div class="st-en reveal">Our Journey</div><div class="st-km reveal">រឿងរ៉ាវស្នេហា</div>
+<div class="divider reveal"><div class="dline"></div><div class="dicon">&#x2661;</div><div class="dline"></div></div>
+</div>
+<div class="tlc">
+<div class="tll"></div>
+<div class="tli"><div class="tldot"></div><div class="tly">🌸 2025 — First Meeting</div><div class="tlh">ការជួបគ្នាលើកដំបូង</div><div class="tldesc">បង់បានត្រឹមស្គាល់ហ្នឹងលឺៈឈ្មោះអូន ចូលឆ្នាំខ្មែរ</div></div>
+<div class="tli"><div class="tldot"></div><div class="tly">💕 2026 — Getting Closer</div><div class="tlh">ស្គាល់ចិត្តគ្នា</div><div class="tldesc">បង់បានលេងម្សៅបាតមុខអូន យើងញាុំមួយយើងស្គាល់ចិត្តគ្នាបង់ សុំចូលសួរ</div></div>
+<div class="tli"><div class="tldot"></div><div class="tly">💍 20 June 2026 — Engagement Day</div><div class="tlh">ថ្ងៃភ្ជាប់ពាក្យ</div><div class="tldesc">ថ្ងៃដ៏ពិសេសរបស់យើង — ស្រឡាញ់គ្នារហូត ❤️</div></div>
+</div>
 </section>
 
-<!-- SCHEDULE -->
-<!-- <section id="schedule">
-  <div class="st-en reveal">Schedule</div>
-  <div class="st-km reveal">កម្មវិធី</div>
-  <div class="divider reveal"><div class="dline"></div><div class="dicon">✦</div><div class="dline"></div></div>
-  <div class="sgrid reveal">
-    <div class="sitem"><div class="sico">🛕</div><div class="stm">8:00 AM</div><div class="snm">ពិធីចង្អុលដៃ</div></div>
-    <div class="sitem"><div class="sico">👨‍👩‍👧‍👦</div><div class="stm">10:00 AM</div><div class="snm">ពិធីសែនសំពះ</div></div>
-    <div class="sitem"><div class="sico">🍽️</div><div class="stm">12:00 PM</div><div class="snm">អាហារថ្ងៃត្រង់</div></div>
-    <div class="sitem"><div class="sico">🥂</div><div class="stm">6:00 PM</div><div class="snm">កម្មវិធីពេលល្ងាច</div></div>
-  </div>
-</section> -->
+<section id="schedule">
+<div class="st-en reveal">Schedule</div><div class="st-km reveal">កម្មវិធី</div>
+<div class="divider"><div class="dline"></div><div class="dicon">&#x2726;</div><div class="dline"></div></div>
+<div class="sgrid reveal">
+<div class="sitem"><div class="sico">🛕</div><div class="stm">8:00 AM</div><div class="snm">ពិធីចង់អុលដៃ</div></div>
+<div class="sitem"><div class="sico">👨‍👩‍👧‍👦</div><div class="stm">10:00 AM</div><div class="snm">ពិធីសែនសំពះ</div></div>
+<div class="sitem"><div class="sico">🍽️</div><div class="stm">12:00 PM</div><div class="snm">អាហារថ្ងៃត្រង់</div></div>
+<div class="sitem"><div class="sico">🥂</div><div class="stm">6:00 PM</div><div class="snm">កម្មវិធីពេលល្ងាច</div></div>
+</div>
+</section>
 
-<!-- RSVP -->
-<!-- <section id="rsvp">
-  <div class="st-en reveal">Attendance</div>
-  <div class="st-km reveal">ការចូលរួម</div>
-  <div class="divider reveal"><div class="dline"></div><div class="dicon">✦</div><div class="dline"></div></div>
-  <div class="rcard reveal" id="rf">
-    <div class="fg"><label class="fl">ឈ្មោះ / Name</label><input type="text" class="fi" placeholder="សូមបំពេញឈ្មោះ" id="rN"></div>
-    <div class="fg"><label class="fl">លេខទូរស័ព្ទ / Phone</label><input type="tel" class="fi" placeholder="012 345 678" id="rP"></div>
-    <div class="fg">
-      <label class="fl">ចូលរួម / Attending</label>
-      <div class="rg">
-        <div class="ro"><input type="radio" name="att" id="aY" value="yes" checked><label class="rl" for="aY">✓ ចូលរួម</label></div>
-        <div class="ro"><input type="radio" name="att" id="aN" value="no"><label class="rl" for="aN">✗ មិនអាច</label></div>
-      </div>
-    </div>
-    <button class="rbtn" onclick="doR()">បញ្ជូន RSVP</button>
-  </div>
-  <div class="rok" id="rOk"><div class="ri">💌</div><p>សូមអរគុណ! យើងបានទទួលការឆ្លើយតបរបស់អ្នកហើយ។</p><p class="rs">Thank you for your response!</p></div>
-</section> -->
-
-<!-- FOOTER -->
 <section id="footer">
-  <div class="fmono">S & K</div>
-  <div class="ftxt">With love & gratitude</div>
-  <div style="font-family:'Noto Serif Khmer',serif;font-size:.75rem;color:var(--text-light);margin-top:.4rem">សូមអរគុណ ❤️</div>
+<div class="fmono">S &amp; K</div>
+<div class="ftxt">With love &amp; gratitude</div>
+<div style="font-family:'Noto Serif Khmer',serif;font-size:.75rem;color:var(--text-light);margin-top:.4rem">សូមអរគុណ ❤️</div>
 </section>
+
 
 <script>
-document.body.style.overflow='hidden';
-
-function openInvite(){
-  document.getElementById('intro').classList.add('hide');
-  document.getElementById('musicBtn').style.display='flex';
-  document.getElementById('ndots').style.display='flex';
-  document.body.style.overflow='';
-  launchHearts();
-  startMusic();
-  setTimeout(()=>{document.getElementById('intro').style.display='none'},900);
-}
-
-// MUSIC — YouTube embed for autoplay
-let ytPlaying=true;
-function startMusic(){
-  // Use YouTube embed with autoplay
-  const iframe=document.getElementById('ytPlayer');
-  iframe.src='https://www.youtube.com/embed/Mn_qLC7_ueA?autoplay=1&loop=1&playlist=Mn_qLC7_ueA&controls=0&showinfo=0&rel=0&enablejsapi=1';
+// MUSIC - autoplay YouTube via iframe on page load (no intro needed)
+var ytPlaying=true;
+function initMusic(){
+  var f=document.getElementById('ytPlayer');
+  f.src='https://www.youtube.com/embed/Mn_qLC7_ueA?autoplay=1&loop=1&playlist=Mn_qLC7_ueA&controls=0&showinfo=0&rel=0';
   document.getElementById('mBars').classList.add('on');
   ytPlaying=true;
 }
 function toggleAudio(){
-  const iframe=document.getElementById('ytPlayer');
-  const bars=document.getElementById('mBars');
-  if(ytPlaying){
-    iframe.src='';
-    bars.classList.remove('on');
-    ytPlaying=false;
-  } else {
-    iframe.src='https://www.youtube.com/embed/Mn_qLC7_ueA?autoplay=1&loop=1&playlist=Mn_qLC7_ueA&controls=0&showinfo=0&rel=0&enablejsapi=1';
-    bars.classList.add('on');
-    ytPlaying=true;
-  }
+  var f=document.getElementById('ytPlayer'),bars=document.getElementById('mBars');
+  if(ytPlaying){f.src='';bars.classList.remove('on');ytPlaying=false}
+  else{f.src='https://www.youtube.com/embed/Mn_qLC7_ueA?autoplay=1&loop=1&playlist=Mn_qLC7_ueA&controls=0&showinfo=0&rel=0';bars.classList.add('on');ytPlaying=true}
 }
+// Try autoplay immediately and also on first user interaction
+initMusic();
+['click','touchstart','scroll'].forEach(function(evt){
+  document.addEventListener(evt,function onFirst(){
+    if(!ytPlaying)initMusic();
+    document.removeEventListener(evt,onFirst);
+  },{once:true,passive:true});
+});
+
+// RING LIGHT RAYS (24 rays)
+var raysEl=document.getElementById('ringRays');
+for(var r=0;r<24;r++){
+  var ray=document.createElement('div');ray.className='ring-ray';
+  var angle=(r*15)-90;
+  var len=45+Math.random()*35;
+  ray.style.transform='rotate('+angle+'deg) translateY(-'+len+'px)';
+  ray.style.animationDelay=(r*0.12)+'s';
+  ray.style.animationDuration=(2+Math.random()*2)+'s';
+  raysEl.appendChild(ray);
+}
+
+// ENERGY WAVES (ripples expanding from gem)
+var ringEl=document.querySelector('.h-ring');
+for(var w=0;w<3;w++){
+  var wave=document.createElement('div');wave.className='energy-wave';
+  wave.style.animationDelay=(w*1)+'s';
+  ringEl.appendChild(wave);
+}
+
+// GLITTER PARTICLES (continuous spawning)
+var glitterEl=document.getElementById('glitterField');
+setInterval(function(){
+  var g=document.createElement('div');g.className='glitter';
+  var startX=100+Math.random()*60-30;
+  var startY=95+Math.random()*30-15;
+  var dx=(Math.random()-0.5)*120;
+  var dy=-(30+Math.random()*80);
+  g.style.left=startX+'px';g.style.top=startY+'px';
+  g.style.width=g.style.height=(1.5+Math.random()*3)+'px';
+  g.style.setProperty('--dx',dx+'px');
+  g.style.setProperty('--dy',dy+'px');
+  var colors=['#d4b35a','#f0e0a0','#7ecbba','#fff','#e8d48b'];
+  g.style.background=colors[Math.floor(Math.random()*colors.length)];
+  g.style.boxShadow='0 0 '+(2+Math.random()*4)+'px '+g.style.background;
+  g.style.animationDuration=(2+Math.random()*3)+'s';
+  glitterEl.appendChild(g);
+  setTimeout(function(){g.remove()},5000);
+},200);
+
+// ORBITING SPARKLES
+var orbitEl=document.getElementById('orbitContainer');
+var orbits=[
+  {r:50,dur:6,size:4,color:'#d4b35a'},
+  {r:70,dur:8,size:3,color:'#f0e0a0'},
+  {r:40,dur:5,size:3.5,color:'#7ecbba'},
+  {r:60,dur:7,size:2.5,color:'#e8d48b'},
+  {r:80,dur:10,size:2,color:'#d4b35a'}
+];
+orbits.forEach(function(o,i){
+  var dot=document.createElement('div');dot.className='orbit-dot';
+  dot.style.width=dot.style.height=o.size+'px';
+  dot.style.background='radial-gradient(circle,#fff,'+o.color+')';
+  dot.style.boxShadow='0 0 '+o.size*2+'px '+o.color;
+  dot.style.setProperty('--r',o.r+'px');
+  dot.style.animationDuration=o.dur+'s';
+  dot.style.animationDelay=(i*0.8)+'s';
+  if(i%2===1)dot.style.animationDirection='reverse';
+  orbitEl.appendChild(dot);
+});
+
+// SPIRAL TRAILS
+var spiralEl=document.getElementById('spiralTrail');
+setInterval(function(){
+  var t=document.createElement('div');t.className='trail-dot';
+  var angle=Math.random()*360;
+  t.style.setProperty('--sa',angle+'deg');
+  t.style.width=t.style.height=(1+Math.random()*2)+'px';
+  var colors=['rgba(212,177,90,.5)','rgba(126,203,186,.4)','rgba(240,224,160,.5)'];
+  t.style.background=colors[Math.floor(Math.random()*colors.length)];
+  t.style.animationDuration=(3+Math.random()*3)+'s';
+  spiralEl.appendChild(t);
+  setTimeout(function(){t.remove()},6000);
+},400);
 
 // SPARKLES
-const spk=document.getElementById('hspk');
-for(let i=0;i<16;i++){const s=document.createElement('div');s.className='hsp';s.textContent='✦';s.style.left=Math.random()*100+'%';s.style.top=Math.random()*100+'%';s.style.animationDelay=Math.random()*3+'s';s.style.animationDuration=(2+Math.random()*3)+'s';s.style.fontSize=(8+Math.random()*8)+'px';spk.appendChild(s)}
+var spk=document.getElementById('hspk');
+for(var i=0;i<16;i++){var s=document.createElement('div');s.className='hsp';s.textContent='\u2726';s.style.left=Math.random()*100+'%';s.style.top=Math.random()*100+'%';s.style.animationDelay=Math.random()*3+'s';s.style.animationDuration=(2+Math.random()*3)+'s';s.style.fontSize=(8+Math.random()*8)+'px';spk.appendChild(s)}
 
 // HEARTS
-function launchHearts(){
-  const box=document.getElementById('hbox');
-  const syms=['♥','♡','❤','🌸','💕'];
-  setInterval(()=>{
-    const h=document.createElement('div');h.className='fh';
-    h.textContent=syms[Math.floor(Math.random()*syms.length)];
-    h.style.left=Math.random()*100+'%';
-    h.style.fontSize=(10+Math.random()*12)+'px';
-    h.style.color=Math.random()>.5?'var(--rose-deep)':'var(--gold-light)';
-    h.style.animationDuration=(7+Math.random()*9)+'s';
-    h.style.animationDelay=Math.random()*2+'s';
-    box.appendChild(h);
-    setTimeout(()=>h.remove(),18000);
-  },2800);
-}
+var hbox=document.getElementById('hbox');
+var syms=['\u2665','\u2661','\u2764','\uD83C\uDF38','\uD83D\uDC95'];
+setInterval(function(){
+  var h=document.createElement('div');h.className='fh';
+  h.textContent=syms[Math.floor(Math.random()*syms.length)];
+  h.style.left=Math.random()*100+'%';
+  h.style.fontSize=(10+Math.random()*12)+'px';
+  h.style.color=Math.random()>.5?'var(--rose-deep)':'var(--gold-light)';
+  h.style.animationDuration=(7+Math.random()*9)+'s';
+  h.style.animationDelay=Math.random()*2+'s';
+  hbox.appendChild(h);
+  setTimeout(function(){h.remove()},18000);
+},2800);
 
 // GALLERY
-let ci=0;const ct=3;const gT=document.getElementById('gT');const gS=document.getElementById('gS');let tx=0;
-function gg(i){ci=i;gT.style.transform=`translateX(-${i*100}%)`;document.querySelectorAll('.gd').forEach((d,j)=>d.classList.toggle('on',j===i))}
-gS.addEventListener('touchstart',e=>{tx=e.changedTouches[0].screenX},{passive:true});
-gS.addEventListener('touchend',e=>{const dx=tx-e.changedTouches[0].screenX;if(dx>45&&ci<ct-1)gg(ci+1);if(dx<-45&&ci>0)gg(ci-1)},{passive:true});
-document.querySelectorAll('.gd').forEach(d=>d.addEventListener('click',()=>gg(parseInt(d.dataset.i))));
-setInterval(()=>gg((ci+1)%ct),5000);
+var ci=0,ct=3,gT=document.getElementById('gT'),gS=document.getElementById('gS'),tx=0;
+function gg(i){ci=i;gT.style.transform='translateX(-'+i*100+'%)';document.querySelectorAll('.gd').forEach(function(d,j){d.classList.toggle('on',j===i)})}
+gS.addEventListener('touchstart',function(e){tx=e.changedTouches[0].screenX},{passive:true});
+gS.addEventListener('touchend',function(e){var dx=tx-e.changedTouches[0].screenX;if(dx>45&&ci<ct-1)gg(ci+1);if(dx<-45&&ci>0)gg(ci-1)},{passive:true});
+document.querySelectorAll('.gd').forEach(function(d){d.addEventListener('click',function(){gg(parseInt(d.dataset.i))})});
+setInterval(function(){gg((ci+1)%ct)},5000);
 
 // COUNTDOWN
-const eD=new Date('2026-06-20T08:00:00+07:00').getTime();
-function tick(){const d=eD-Date.now();if(d<=0){['cD','cH','cM','cS'].forEach(id=>document.getElementById(id).textContent='00');return}document.getElementById('cD').textContent=String(Math.floor(d/864e5)).padStart(2,'0');document.getElementById('cH').textContent=String(Math.floor((d%864e5)/36e5)).padStart(2,'0');document.getElementById('cM').textContent=String(Math.floor((d%36e5)/6e4)).padStart(2,'0');document.getElementById('cS').textContent=String(Math.floor((d%6e4)/1e3)).padStart(2,'0')}
+var eD=new Date('2026-06-20T08:00:00+07:00').getTime();
+function tick(){var d=eD-Date.now();if(d<=0){['cD','cH','cM','cS'].forEach(function(id){document.getElementById(id).textContent='00'});return}document.getElementById('cD').textContent=String(Math.floor(d/864e5)).padStart(2,'0');document.getElementById('cH').textContent=String(Math.floor((d%864e5)/36e5)).padStart(2,'0');document.getElementById('cM').textContent=String(Math.floor((d%36e5)/6e4)).padStart(2,'0');document.getElementById('cS').textContent=String(Math.floor((d%6e4)/1e3)).padStart(2,'0')}
 tick();setInterval(tick,1000);
 
 // REVEAL
-const ro=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('vis')})},{threshold:.12});
-document.querySelectorAll('.reveal,.tli').forEach(el=>ro.observe(el));
+var ro=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting)e.target.classList.add('vis')})},{threshold:.12});
+document.querySelectorAll('.reveal,.tli').forEach(function(el){ro.observe(el)});
 
 // NAV DOTS
-const sects=['hero','gallery','details','countdown','lovestory','schedule','rsvp'];
-const dob=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting)document.querySelectorAll('.ndot').forEach(d=>d.classList.toggle('on',d.dataset.s===e.target.id))})},{threshold:.35});
-sects.forEach(id=>{const el=document.getElementById(id);if(el)dob.observe(el)});
-document.querySelectorAll('.ndot').forEach(d=>d.addEventListener('click',()=>document.getElementById(d.dataset.s)?.scrollIntoView({behavior:'smooth'})));
-
-// RSVP
-function doR(){const n=document.getElementById('rN').value.trim();if(!n){document.getElementById('rN').style.borderColor='var(--rose-deep)';setTimeout(()=>document.getElementById('rN').style.borderColor='',2000);return}document.getElementById('rf').style.display='none';document.getElementById('rOk').classList.add('show')}
+var sects=['hero','gallery','details','countdown','lovestory','schedule'];
+var dob=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting)document.querySelectorAll('.ndot').forEach(function(d){d.classList.toggle('on',d.dataset.s===e.target.id)})})},{threshold:.35});
+sects.forEach(function(id){var el=document.getElementById(id);if(el)dob.observe(el)});
+document.querySelectorAll('.ndot').forEach(function(d){d.addEventListener('click',function(){var el=document.getElementById(d.dataset.s);if(el)el.scrollIntoView({behavior:'smooth'})})});
 </script>
+
 </body>
 </html>
